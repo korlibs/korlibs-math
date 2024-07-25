@@ -4,10 +4,12 @@ product:
 
 apply: [ ../common.module-template.yaml ]
 
-aliases:
-  - jvmAndAndroid: [jvm, android]
-
 dependencies:
+  - com.soywiz:korlibs-math-core:6.0.0: exported
+  - com.soywiz:korlibs-math-vector:6.0.0: exported
+  - com.soywiz:korlibs-platform:6.0.0: exported
+  - com.soywiz:korlibs-datastructure:6.0.0: exported
+  - com.soywiz:korlibs-number:6.0.0: exported
 
 test-dependencies:
-
+  - com.soywiz:korlibs-platform:6.0.0
