@@ -21,7 +21,7 @@ public abstract interface class korlibs/math/geom/IScale {
 }
 
 public abstract interface class korlibs/math/geom/IVector3 {
-	public abstract fun get (I)F
+	public fun get (I)F
 	public abstract fun getX ()F
 	public abstract fun getY ()F
 	public abstract fun getZ ()F
@@ -1681,13 +1681,13 @@ public abstract interface class korlibs/math/geom/bezier/Curve {
 	public static final field Companion Lkorlibs/math/geom/bezier/Curve$Companion;
 	public static final field DEFAULT_STEPS I
 	public abstract fun calc-kg1FUQ0 (D)Lkorlibs/math/geom/Vector2D;
-	public abstract fun calcOffset-DJj3pIk (DD)Lkorlibs/math/geom/Vector2D;
+	public fun calcOffset-DJj3pIk (DD)Lkorlibs/math/geom/Vector2D;
 	public abstract fun getBounds ()Lkorlibs/math/geom/Rectangle;
 	public abstract fun getLength ()D
 	public abstract fun getOrder ()I
 	public abstract fun normal-kg1FUQ0 (D)Lkorlibs/math/geom/Vector2D;
-	public abstract fun ratioFromLength-4uGNJ3M (D)D
-	public abstract fun recommendedDivisions ()I
+	public fun ratioFromLength-4uGNJ3M (D)D
+	public fun recommendedDivisions ()I
 	public abstract fun tangent-kg1FUQ0 (D)Lkorlibs/math/geom/Vector2D;
 }
 
@@ -1849,7 +1849,7 @@ public abstract interface class korlibs/math/geom/bezier/StrokePoints {
 	public abstract fun getDebugSegments ()Ljava/util/List;
 	public abstract fun getMode ()Lkorlibs/math/geom/bezier/StrokePointsMode;
 	public abstract fun getVector ()Lkorlibs/math/geom/DoubleVectorArrayList;
-	public abstract fun scale (D)V
+	public fun scale (D)V
 }
 
 public final class korlibs/math/geom/bezier/StrokePoints$DefaultImpls {
@@ -2390,22 +2390,22 @@ public final class korlibs/math/geom/shape/RoundRectangleShape2D : korlibs/math/
 
 public abstract interface class korlibs/math/geom/shape/Shape2D : korlibs/math/geom/shape/SimpleShape2D {
 	public static final field Companion Lkorlibs/math/geom/shape/Shape2D$Companion;
-	public abstract fun containsPoint (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Matrix;)Z
-	public abstract fun containsPoint (Lkorlibs/math/geom/Vector2D;)Z
-	public abstract fun distance (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Matrix;)D
-	public abstract fun distance (Lkorlibs/math/geom/Vector2D;)D
-	public abstract fun getArea ()D
-	public abstract fun getBounds ()Lkorlibs/math/geom/Rectangle;
-	public abstract fun getCenter ()Lkorlibs/math/geom/Vector2D;
-	public abstract fun getClosed ()Z
-	public abstract fun getPerimeter ()D
-	public abstract fun intersectionsWith (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/shape/Shape2D;Lkorlibs/math/geom/Matrix;)Lkorlibs/math/geom/PointList;
-	public abstract fun intersectionsWith (Lkorlibs/math/geom/shape/Shape2D;)Lkorlibs/math/geom/PointList;
-	public abstract fun intersectsWith (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/shape/Shape2D;Lkorlibs/math/geom/Matrix;)Z
-	public abstract fun intersectsWith (Lkorlibs/math/geom/shape/Shape2D;)Z
-	public abstract fun normalVectorAt (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Matrix;)Lkorlibs/math/geom/Vector2D;
+	public fun containsPoint (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Matrix;)Z
+	public fun containsPoint (Lkorlibs/math/geom/Vector2D;)Z
+	public fun distance (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Matrix;)D
+	public fun distance (Lkorlibs/math/geom/Vector2D;)D
+	public fun getArea ()D
+	public fun getBounds ()Lkorlibs/math/geom/Rectangle;
+	public fun getCenter ()Lkorlibs/math/geom/Vector2D;
+	public fun getClosed ()Z
+	public fun getPerimeter ()D
+	public fun intersectionsWith (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/shape/Shape2D;Lkorlibs/math/geom/Matrix;)Lkorlibs/math/geom/PointList;
+	public fun intersectionsWith (Lkorlibs/math/geom/shape/Shape2D;)Lkorlibs/math/geom/PointList;
+	public fun intersectsWith (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/shape/Shape2D;Lkorlibs/math/geom/Matrix;)Z
+	public fun intersectsWith (Lkorlibs/math/geom/shape/Shape2D;)Z
+	public fun normalVectorAt (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Matrix;)Lkorlibs/math/geom/Vector2D;
 	public abstract fun normalVectorAt (Lkorlibs/math/geom/Vector2D;)Lkorlibs/math/geom/Vector2D;
-	public abstract fun projectedPoint (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Matrix;)Lkorlibs/math/geom/Vector2D;
+	public fun projectedPoint (Lkorlibs/math/geom/Matrix;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Matrix;)Lkorlibs/math/geom/Vector2D;
 	public abstract fun projectedPoint (Lkorlibs/math/geom/Vector2D;)Lkorlibs/math/geom/Vector2D;
 	public abstract fun toVectorPath ()Lkorlibs/math/geom/vector/VectorPath;
 }
@@ -2602,8 +2602,8 @@ public abstract interface class korlibs/math/geom/slice/SliceCoords {
 	public abstract fun getTlY ()F
 	public abstract fun getTrX ()F
 	public abstract fun getTrY ()F
-	public abstract fun x (I)F
-	public abstract fun y (I)F
+	public fun x (I)F
+	public fun y (I)F
 }
 
 public final class korlibs/math/geom/slice/SliceCoords$DefaultImpls {
@@ -2656,21 +2656,23 @@ public final class korlibs/math/geom/slice/SliceCoordsImpl : korlibs/math/geom/s
 
 public abstract interface class korlibs/math/geom/slice/SliceCoordsWithBase : korlibs/math/geom/slice/SliceCoords {
 	public static final field Companion Lkorlibs/math/geom/slice/SliceCoordsWithBase$Companion;
-	public abstract fun flippedX ()Lkorlibs/math/geom/slice/SliceCoordsWithBase;
-	public abstract fun flippedY ()Lkorlibs/math/geom/slice/SliceCoordsWithBase;
+	public fun flippedX ()Lkorlibs/math/geom/slice/SliceCoordsWithBase;
+	public fun flippedY ()Lkorlibs/math/geom/slice/SliceCoordsWithBase;
 	public abstract fun getBase ()Lkorlibs/math/geom/SizeableInt;
-	public abstract fun getFrameHeight ()I
-	public abstract fun getFrameOffsetX ()I
-	public abstract fun getFrameOffsetY ()I
-	public abstract fun getFrameWidth ()I
+	public fun getFrameHeight ()I
+	public fun getFrameOffsetX ()I
+	public fun getFrameOffsetY ()I
+	public fun getFrameWidth ()I
 	public abstract fun getHeight ()I
-	public abstract fun getName ()Ljava/lang/String;
+	public fun getName ()Ljava/lang/String;
 	public abstract fun getPadding ()Lkorlibs/math/geom/MarginInt;
-	public abstract fun getSizeString ()Ljava/lang/String;
+	public fun getSizeString ()Ljava/lang/String;
 	public abstract fun getWidth ()I
-	public abstract fun rotatedLeft (I)Lkorlibs/math/geom/slice/SliceCoordsWithBase;
-	public abstract fun rotatedRight (I)Lkorlibs/math/geom/slice/SliceCoordsWithBase;
-	public abstract fun transformed-IC3zliY (I)Lkorlibs/math/geom/slice/SliceCoordsWithBase;
+	public fun rotatedLeft (I)Lkorlibs/math/geom/slice/SliceCoordsWithBase;
+	public static synthetic fun rotatedLeft$default (Lkorlibs/math/geom/slice/SliceCoordsWithBase;IILjava/lang/Object;)Lkorlibs/math/geom/slice/SliceCoordsWithBase;
+	public fun rotatedRight (I)Lkorlibs/math/geom/slice/SliceCoordsWithBase;
+	public static synthetic fun rotatedRight$default (Lkorlibs/math/geom/slice/SliceCoordsWithBase;IILjava/lang/Object;)Lkorlibs/math/geom/slice/SliceCoordsWithBase;
+	public fun transformed-IC3zliY (I)Lkorlibs/math/geom/slice/SliceCoordsWithBase;
 }
 
 public final class korlibs/math/geom/slice/SliceCoordsWithBase$Companion {
@@ -2697,12 +2699,12 @@ public final class korlibs/math/geom/slice/SliceCoordsWithBase$DefaultImpls {
 }
 
 public abstract interface class korlibs/math/geom/slice/SliceCoordsWithBaseAndRect : korlibs/math/geom/slice/SliceCoordsWithBase {
-	public abstract fun getArea ()I
-	public abstract fun getBottom ()I
-	public abstract fun getLeft ()I
+	public fun getArea ()I
+	public fun getBottom ()I
+	public fun getLeft ()I
 	public abstract fun getRect ()Lkorlibs/math/geom/RectangleInt;
-	public abstract fun getRight ()I
-	public abstract fun getTop ()I
+	public fun getRight ()I
+	public fun getTop ()I
 }
 
 public final class korlibs/math/geom/slice/SliceCoordsWithBaseAndRect$DefaultImpls {
@@ -3582,96 +3584,111 @@ public final class korlibs/math/geom/vector/StrokeToFill {
 }
 
 public abstract interface class korlibs/math/geom/vector/VectorBuilder {
-	public abstract fun arc-gw4c68o (Lkorlibs/math/geom/Vector2D;Ljava/lang/Number;DDZ)V
-	public abstract fun arcTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;D)V
-	public abstract fun arcTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;F)V
-	public abstract fun circle (Lkorlibs/math/geom/Circle;)V
-	public abstract fun circle (Lkorlibs/math/geom/Vector2D;Ljava/lang/Number;)V
-	public abstract fun circleHole (Lkorlibs/math/geom/Circle;)V
-	public abstract fun circleHole (Lkorlibs/math/geom/Vector2D;Ljava/lang/Number;)V
+	public fun arc-gw4c68o (Lkorlibs/math/geom/Vector2D;Ljava/lang/Number;DDZ)V
+	public static synthetic fun arc-gw4c68o$default (Lkorlibs/math/geom/vector/VectorBuilder;Lkorlibs/math/geom/Vector2D;Ljava/lang/Number;DDZILjava/lang/Object;)V
+	public fun arcTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;D)V
+	public fun arcTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;F)V
+	public fun circle (Lkorlibs/math/geom/Circle;)V
+	public fun circle (Lkorlibs/math/geom/Vector2D;Ljava/lang/Number;)V
+	public fun circleHole (Lkorlibs/math/geom/Circle;)V
+	public fun circleHole (Lkorlibs/math/geom/Vector2D;Ljava/lang/Number;)V
 	public abstract fun close ()V
-	public abstract fun cubic (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun cubicTo (DDDDDD)V
-	public abstract fun cubicTo (FFFFFF)V
-	public abstract fun cubicTo (IIIIII)V
+	public fun cubic (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
+	public fun cubicTo (DDDDDD)V
+	public fun cubicTo (FFFFFF)V
+	public fun cubicTo (IIIIII)V
 	public abstract fun cubicTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun curve (Lkorlibs/math/geom/bezier/Bezier;)V
-	public abstract fun curves (Ljava/util/List;)V
-	public abstract fun curves (Lkorlibs/math/geom/bezier/Curves;)V
-	public abstract fun ellipse (Lkorlibs/math/geom/Ellipse;)V
-	public abstract fun ellipse (Lkorlibs/math/geom/Rectangle;)V
-	public abstract fun ellipse (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Size2D;)V
+	public fun curve (Lkorlibs/math/geom/bezier/Bezier;)V
+	public fun curves (Ljava/util/List;)V
+	public fun curves (Lkorlibs/math/geom/bezier/Curves;)V
+	public fun ellipse (Lkorlibs/math/geom/Ellipse;)V
+	public fun ellipse (Lkorlibs/math/geom/Rectangle;)V
+	public fun ellipse (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Size2D;)V
 	public abstract fun getLastMovePos ()Lkorlibs/math/geom/Vector2D;
 	public abstract fun getLastPos ()Lkorlibs/math/geom/Vector2D;
 	public abstract fun getTotalPoints ()I
-	public abstract fun isEmpty ()Z
-	public abstract fun isNotEmpty ()Z
-	public abstract fun line (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun lineTo (DD)V
-	public abstract fun lineTo (FF)V
-	public abstract fun lineTo (II)V
+	public fun isEmpty ()Z
+	public fun isNotEmpty ()Z
+	public fun line (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
+	public fun lineTo (DD)V
+	public fun lineTo (FF)V
+	public fun lineTo (II)V
 	public abstract fun lineTo (Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun lineToH (D)V
-	public abstract fun lineToV (D)V
-	public abstract fun moveTo (DD)V
-	public abstract fun moveTo (FF)V
-	public abstract fun moveTo (II)V
+	public fun lineToH (D)V
+	public fun lineToV (D)V
+	public fun moveTo (DD)V
+	public fun moveTo (FF)V
+	public fun moveTo (II)V
 	public abstract fun moveTo (Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun moveToH (D)V
-	public abstract fun moveToV (D)V
-	public abstract fun parallelogram-71ybUt4 (Lkorlibs/math/geom/Rectangle;DZ)V
-	public abstract fun polygon (Ljava/util/List;Z)V
-	public abstract fun polygon (Lkorlibs/math/geom/IPointList;Z)V
-	public abstract fun polygon ([Lkorlibs/math/geom/Vector2D;Z)V
-	public abstract fun polyline (Ljava/util/List;Z)V
-	public abstract fun polyline (Lkorlibs/math/geom/IPointList;Z)V
-	public abstract fun polyline ([Lkorlibs/math/geom/Vector2D;Z)V
-	public abstract fun quad (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun quadTo (DDDD)V
-	public abstract fun quadTo (FFFF)V
-	public abstract fun quadTo (IIII)V
-	public abstract fun quadTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun rCubicTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun rCubicTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Z)V
-	public abstract fun rLineTo (Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun rLineTo (Lkorlibs/math/geom/Vector2D;Z)V
-	public abstract fun rLineToH (D)V
-	public abstract fun rLineToH (DZ)V
-	public abstract fun rLineToHV (DZ)V
-	public abstract fun rLineToV (D)V
-	public abstract fun rLineToV (DZ)V
-	public abstract fun rMoveTo (Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun rMoveTo (Lkorlibs/math/geom/Vector2D;Z)V
-	public abstract fun rMoveToH (D)V
-	public abstract fun rMoveToH (DZ)V
-	public abstract fun rMoveToHV (DZ)V
-	public abstract fun rMoveToV (D)V
-	public abstract fun rMoveToV (DZ)V
-	public abstract fun rQuadTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun rQuadTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Z)V
-	public abstract fun rect (DDDD)V
-	public abstract fun rect (FFFF)V
-	public abstract fun rect (IIII)V
-	public abstract fun rect (Lkorlibs/math/geom/Rectangle;)V
-	public abstract fun rect (Lkorlibs/math/geom/RectangleInt;)V
-	public abstract fun rect (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Size2D;)V
-	public abstract fun rectHole (DDDD)V
-	public abstract fun rectHole (FFFF)V
-	public abstract fun rectHole (IIII)V
-	public abstract fun rectHole (Lkorlibs/math/geom/Rectangle;)V
-	public abstract fun regularPolygon-naQvTww (IDDDD)V
-	public abstract fun regularPolygonHole-naQvTww (IDDDD)V
-	public abstract fun roundRect (DDDDDD)V
-	public abstract fun roundRect (DDDDDDDD)V
-	public abstract fun roundRect (FFFFFF)V
-	public abstract fun roundRect (IIIIII)V
-	public abstract fun roundRect (Lkorlibs/math/geom/RoundRectangle;)V
-	public abstract fun star-dVqXrhI (IDDDDD)V
-	public abstract fun starHole-dVqXrhI (IDDDDD)V
-	public abstract fun transformed (Lkorlibs/math/geom/Matrix;)Lkorlibs/math/geom/vector/VectorBuilder;
-	public abstract fun transformed (Lkorlibs/math/geom/Matrix;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
-	public abstract fun write (Ljava/util/List;)V
-	public abstract fun write (Lkorlibs/math/geom/bezier/Curves;)V
+	public fun moveToH (D)V
+	public fun moveToV (D)V
+	public fun parallelogram-71ybUt4 (Lkorlibs/math/geom/Rectangle;DZ)V
+	public static synthetic fun parallelogram-71ybUt4$default (Lkorlibs/math/geom/vector/VectorBuilder;Lkorlibs/math/geom/Rectangle;DZILjava/lang/Object;)V
+	public fun polygon (Ljava/util/List;Z)V
+	public fun polygon (Lkorlibs/math/geom/IPointList;Z)V
+	public fun polygon ([Lkorlibs/math/geom/Vector2D;Z)V
+	public static synthetic fun polygon$default (Lkorlibs/math/geom/vector/VectorBuilder;Ljava/util/List;ZILjava/lang/Object;)V
+	public static synthetic fun polygon$default (Lkorlibs/math/geom/vector/VectorBuilder;Lkorlibs/math/geom/IPointList;ZILjava/lang/Object;)V
+	public static synthetic fun polygon$default (Lkorlibs/math/geom/vector/VectorBuilder;[Lkorlibs/math/geom/Vector2D;ZILjava/lang/Object;)V
+	public fun polyline (Ljava/util/List;Z)V
+	public fun polyline (Lkorlibs/math/geom/IPointList;Z)V
+	public fun polyline ([Lkorlibs/math/geom/Vector2D;Z)V
+	public static synthetic fun polyline$default (Lkorlibs/math/geom/vector/VectorBuilder;Ljava/util/List;ZILjava/lang/Object;)V
+	public static synthetic fun polyline$default (Lkorlibs/math/geom/vector/VectorBuilder;Lkorlibs/math/geom/IPointList;ZILjava/lang/Object;)V
+	public static synthetic fun polyline$default (Lkorlibs/math/geom/vector/VectorBuilder;[Lkorlibs/math/geom/Vector2D;ZILjava/lang/Object;)V
+	public fun quad (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
+	public fun quadTo (DDDD)V
+	public fun quadTo (FFFF)V
+	public fun quadTo (IIII)V
+	public fun quadTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
+	public fun rCubicTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
+	public fun rCubicTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Z)V
+	public fun rLineTo (Lkorlibs/math/geom/Vector2D;)V
+	public fun rLineTo (Lkorlibs/math/geom/Vector2D;Z)V
+	public fun rLineToH (D)V
+	public fun rLineToH (DZ)V
+	public fun rLineToHV (DZ)V
+	public fun rLineToV (D)V
+	public fun rLineToV (DZ)V
+	public fun rMoveTo (Lkorlibs/math/geom/Vector2D;)V
+	public fun rMoveTo (Lkorlibs/math/geom/Vector2D;Z)V
+	public fun rMoveToH (D)V
+	public fun rMoveToH (DZ)V
+	public fun rMoveToHV (DZ)V
+	public fun rMoveToV (D)V
+	public fun rMoveToV (DZ)V
+	public fun rQuadTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
+	public fun rQuadTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Z)V
+	public fun rect (DDDD)V
+	public fun rect (FFFF)V
+	public fun rect (IIII)V
+	public fun rect (Lkorlibs/math/geom/Rectangle;)V
+	public fun rect (Lkorlibs/math/geom/RectangleInt;)V
+	public fun rect (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Size2D;)V
+	public fun rectHole (DDDD)V
+	public fun rectHole (FFFF)V
+	public fun rectHole (IIII)V
+	public fun rectHole (Lkorlibs/math/geom/Rectangle;)V
+	public fun regularPolygon-naQvTww (IDDDD)V
+	public static synthetic fun regularPolygon-naQvTww$default (Lkorlibs/math/geom/vector/VectorBuilder;IDDDDILjava/lang/Object;)V
+	public fun regularPolygonHole-naQvTww (IDDDD)V
+	public static synthetic fun regularPolygonHole-naQvTww$default (Lkorlibs/math/geom/vector/VectorBuilder;IDDDDILjava/lang/Object;)V
+	public fun roundRect (DDDDDD)V
+	public fun roundRect (DDDDDDDD)V
+	public fun roundRect (FFFFFF)V
+	public fun roundRect (IIIIII)V
+	public fun roundRect (Lkorlibs/math/geom/RoundRectangle;)V
+	public static synthetic fun roundRect$default (Lkorlibs/math/geom/vector/VectorBuilder;DDDDDDILjava/lang/Object;)V
+	public static synthetic fun roundRect$default (Lkorlibs/math/geom/vector/VectorBuilder;FFFFFFILjava/lang/Object;)V
+	public static synthetic fun roundRect$default (Lkorlibs/math/geom/vector/VectorBuilder;IIIIIIILjava/lang/Object;)V
+	public fun star-dVqXrhI (IDDDDD)V
+	public static synthetic fun star-dVqXrhI$default (Lkorlibs/math/geom/vector/VectorBuilder;IDDDDDILjava/lang/Object;)V
+	public fun starHole-dVqXrhI (IDDDDD)V
+	public static synthetic fun starHole-dVqXrhI$default (Lkorlibs/math/geom/vector/VectorBuilder;IDDDDDILjava/lang/Object;)V
+	public fun transformed (Lkorlibs/math/geom/Matrix;)Lkorlibs/math/geom/vector/VectorBuilder;
+	public fun transformed (Lkorlibs/math/geom/Matrix;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public fun write (Ljava/util/List;)V
+	public fun write (Lkorlibs/math/geom/bezier/Curves;)V
 }
 
 public final class korlibs/math/geom/vector/VectorBuilder$DefaultImpls {
@@ -3960,11 +3977,11 @@ public final class korlibs/math/geom/vector/VectorPath$Stats {
 }
 
 public abstract interface class korlibs/math/geom/vector/VectorPath$Visitor {
-	public abstract fun close ()V
-	public abstract fun cubicTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun lineTo (Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun moveTo (Lkorlibs/math/geom/Vector2D;)V
-	public abstract fun quadTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
+	public fun close ()V
+	public fun cubicTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
+	public fun lineTo (Lkorlibs/math/geom/Vector2D;)V
+	public fun moveTo (Lkorlibs/math/geom/Vector2D;)V
+	public fun quadTo (Lkorlibs/math/geom/Vector2D;Lkorlibs/math/geom/Vector2D;)V
 }
 
 public final class korlibs/math/geom/vector/VectorPath$Visitor$DefaultImpls {
