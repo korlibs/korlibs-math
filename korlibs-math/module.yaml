@@ -5,11 +5,11 @@ product:
 apply: [ ../common.module-template.yaml ]
 
 dependencies:
-  - com.soywiz:korlibs-math-core:6.0.0: exported
-  - com.soywiz:korlibs-math-vector:6.0.0: exported
-  - com.soywiz:korlibs-platform:6.0.0: exported
-  - com.soywiz:korlibs-datastructure:6.0.0: exported
-  - com.soywiz:korlibs-number:6.0.0: exported
+  - org.korge:korlibs-math-core:6.1.0: exported
+  - org.korge:korlibs-math-vector:6.1.0: exported
+  - org.korge:korlibs-platform:6.1.0: exported
+  - org.korge:korlibs-datastructure:6.1.0: exported
+  - org.korge:korlibs-number:6.1.0: exported
 
 test-dependencies:
-  - com.soywiz:korlibs-platform:6.0.0
+  - org.korge:korlibs-platform:6.1.0
