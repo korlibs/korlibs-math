@@ -55,6 +55,22 @@ class EasingTest {
         assertEasing(Easing.SMOOTH, numbers(0, 0.03, 0.1, 0.22, 0.35, 0.5, 0.65, 0.78, 0.9, 0.97, 1))
     }
 
+    @Test
+    fun testCubicFloat() {
+        val easing = Easing.cubic(0.86f, 0.13f, 0.22f, 0.84f)
+        assertEqualsFloat(doubleArrayListOf(0.0, 0.02, 0.05, 0.1, 0.18, 0.36, 0.73, 0.87, 0.93, 0.97, 1.0), easing.getSamples(), 0.01)
+    }
+
+    @Test
+    fun testAllListContainsAllEasings() {
+        val allList = Easing.ALL_LIST
+        assertTrue(allList.isNotEmpty(), "ALL_LIST should not be empty")
+        assertTrue(allList.any { it.toString() == "smooth" }, "ALL_LIST should contain SMOOTH")
+        assertTrue(allList.any { it.toString() == "linear" }, "ALL_LIST should contain LINEAR")
+        assertTrue(allList.any { it.toString() == "ease" }, "ALL_LIST should contain EASE")
+        assertEquals(29, allList.size, "ALL_LIST should contain all 29 standard easings")
+    }
+
     fun Easing.strSamples(): String = getSamples().str()
     fun Easing.getSamples(): DoubleArrayList = (0..10).mapDouble { this(it.toDouble() / 10.0) }
     fun DoubleArrayList.str() = "[" + this.joinToString(", ") { it.toStringDecimal(2, true) } + "]"
